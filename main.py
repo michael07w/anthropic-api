@@ -2,6 +2,7 @@ from anthropic import Anthropic
 from dotenv import load_dotenv
 from chatbot import Chatbot
 from streaming_chatbot import StreamingChatbot
+from vision import summarize_paper
 import asyncio
 import os
 
@@ -128,4 +129,5 @@ if __name__ == "__main__":
     #exercise_two()
     #exercise_four_params(client)
     #streaming(client)
-    asyncio.run(exercise_five())
+    #asyncio.run(exercise_five())
+    summarize_paper()
